@@ -9,7 +9,7 @@ using VideoGameGallery.Models;
 
 namespace VideoGameGallery.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Controller    // inherit the homecontroller to controller
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -18,12 +18,12 @@ namespace VideoGameGallery.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index()    // index method, returning to index.cshtml
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy()  // privacy method, returning to privacy.chstml
         {
             return View();
         }
